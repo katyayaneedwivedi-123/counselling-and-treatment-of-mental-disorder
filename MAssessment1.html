@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Massessment1Style.css">
+    <title>Lifestyle Based Assessment Test</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Symptoms Based Assessment Test</h1>
+        <h2>Name:</h2>
+        <h2 id="name"></h2>
+    </div>
+    <!-- Progress bar above the form -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div><br>
+
+    <!-- Form -->
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question" id="question1">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.1</h2>
+            <p style="font-size: 20px;">Answer these questions as in your day to day life</p>
+            <br>
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <p style="font-size: 18px;">Do you find yourself feeling <b>excessively stressed</b>?</p>
+                </div>
+                <div class="answer-options">
+                    <label for="answer1a" class="answer-option"><input type="radio" name="answer1.1" id="answer1a"
+                            value="No" data-value="0" required> No</label>
+                    <label for="answer1b" class="answer-option"><input type="radio" name="answer1.1" id="answer1b"
+                            value="Yes" data-value="3">Yes</label>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <p style="font-size: 18px;">Do you experience <b> difficulty falling asleep</b> or staying asleep
+                        due to
+                        worry or anxiety?</p>
+                </div>
+                <div class="answer-options">
+                    <label for="answer2a" class="answer-option"><input type="radio" name="answer1.2" id="answer1a"
+                            value="No" data-value="0" required> No</label>
+                    <label for="answer2b" class="answer-option"><input type="radio" name="answer1.2" id="answer1b"
+                            value="Yes" data-value="3">Yes</label>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <p style="font-size: 18px;">Do you have <b>difficulty in concentrating</b> or that your mind is
+                        distracted?</p>
+                </div>
+                <div class="answer-options">
+                    <label for="answer3a" class="answer-option"><input type="radio" name="answer1.3" id="answer1a"
+                            value="No" data-value="0" required> No</label>
+                    <label for="answer3b" class="answer-option"><input type="radio" name="answer1.3" id="answer1b"
+                            value="Yes" data-value="3">Yes</label>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <p style="font-size: 18px;">Do you find it <b>xchallenging to relax</b> and unwind, often feeling
+                        tense or on edge?
+                    </p>
+                </div>
+                <div class="answer-options">
+                    <label for="answer4a" class="answer-option"><input type="radio" name="answer1.4" id="answer1a"
+                            value="No" data-value="0" required> No</label>
+                    <label for="answer4b" class="answer-option"><input type="radio" name="answer1.4" id="answer1b"
+                            value="Yes" data-value="3">Yes</label>
+                </div>
+            </div>
+            <br><br><br><br>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+
+        </div>
+        <div class="question" id="question2">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.2</h2>
+            <p style="font-size: 18px;">How often do you experience difficulties with your sleep patterns?</p>
+            <div class="answer-options">
+                <label for="answer2a" class="answer-option"><input type="radio" name="answer2" id="answer2a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer2b" class="answer-option"><input type="radio" name="answer2" id="answer2b"
+                        value="Occasionally" data-value="2"> occasionally</label>
+                <label for="answer2c" class="answer-option"><input type="radio" name="answer2" id="answer2c"
+                        value="Regularly" data-value="4"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer2aa" class="answer-option"><input type="radio" name="answera2" id="answer2aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer2ab" class="answer-option"><input type="radio" name="answera2" id="answer2ab"
+                        value="Yes" data-value="4"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="question" id="question3">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.3</h2>
+            <p style="font-size: 18px;">Have you noticed temporary changes in your eating habits that concern you?</p>
+            <div class="answer-options">
+                <label for="answer3a" class="answer-option"><input type="radio" name="answer3" id="answer3a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer3b" class="answer-option"><input type="radio" name="answer3" id="answer3b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer3c" class="answer-option"><input type="radio" name="answer3" id="answer3c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer3aa" class="answer-option"><input type="radio" name="answera3" id="answer3aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer3ab" class="answer-option"><input type="radio" name="answera3" id="answer3ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="question" id="question4">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.4</h2>
+            <p style="font-size: 18px;">Do you find it challenging to concentrate or focus on tasks?</p>
+            <div class="answer-options">
+                <label for="answer4a" class="answer-option"><input type="radio" name="answer4" id="answer4a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer4b" class="answer-option"><input type="radio" name="answer4" id="answer4b"
+                        value="Occasionally" data-value="2"> occasionally</label>
+                <label for="answer4c" class="answer-option"><input type="radio" name="answer4" id="answer4c"
+                        value="Regularly" data-value="4"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer4aa" class="answer-option"><input type="radio" name="answera4" id="answer4aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer4ab" class="answer-option"><input type="radio" name="answera4" id="answer4ab"
+                        value="Yes" data-value="4"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="question" id="question5">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.5</h2>
+            <p style="font-size: 18px;">How often do thoughts of giving up or any other related thoughts cross your
+                mind?</p>
+            <div class="answer-options">
+                <label for="answer5a" class="answer-option"><input type="radio" name="answer5" id="answer5a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer5b" class="answer-option"><input type="radio" name="answer5" id="answer5b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer5c" class="answer-option"><input type="radio" name="answer5" id="answer5c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer5aa" class="answer-option"><input type="radio" name="answera5" id="answer5aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer5ab" class="answer-option"><input type="radio" name="answera5" id="answer5ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="question" id="question6">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.6</h2>
+            <p style="font-size: 18px;">Have you noticed any changes in your energy levels that worry you?</p>
+            <div class="answer-options">
+                <label for="answer6a" class="answer-option"><input type="radio" name="answer6" id="answer6a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer6b" class="answer-option"><input type="radio" name="answer6" id="answer6b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer6c" class="answer-option"><input type="radio" name="answer6" id="answer6c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer6aa" class="answer-option"><input type="radio" name="answera6" id="answer6aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer6ab" class="answer-option"><input type="radio" name="answera6" id="answer6ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="question" id="question7">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.7</h2>
+            <p style="font-size: 18px;">Have you noticed any significant changes in your mood that concern
+                you?</p>
+            <div class="answer-options">
+                <label for="answer7a" class="answer-option"><input type="radio" name="answer7" id="answer7a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer7b" class="answer-option"><input type="radio" name="answer7" id="answer7b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer7c" class="answer-option"><input type="radio" name="answer7" id="answer7c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer7aa" class="answer-option"><input type="radio" name="answera7" id="answer7aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer7ab" class="answer-option"><input type="radio" name="answera7" id="answer7ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="question" id="question8">
+            <h2 class="section" id="section">Section A: Depression</h2>
+
+            <h2>Question A.8</h2>
+            <p style="font-size: 18px;">Are you currently experiencing unusual thoughts or sensations that others don't,
+                like delusions or hallucinations?</p>
+            <div class="answer-options">
+                <label for="answer8a" class="answer-option"><input type="radio" name="answer8" id="answer8a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer8b" class="answer-option"><input type="radio" name="answer8" id="answer8b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer8c" class="answer-option"><input type="radio" name="answer8" id="answer8c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer8aa" class="answer-option"><input type="radio" name="answera8" id="answer8aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer8ab" class="answer-option"><input type="radio" name="answera8" id="answer8ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+
+        <div class="question" id="question9">
+            <h2 class="section" id="section">Section A: Depression</h2>
+            <h2>Question A.9</h2>
+            <p style="font-size: 18px;">Do you find yourself frequently irritable or having sudden bursts of anger?</p>
+            <div class="answer-options">
+                <label for="answer9a" class="answer-option"><input type="radio" name="answer9" id="answer9a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer9b" class="answer-option"><input type="radio" name="answer9" id="answer9b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer9c" class="answer-option"><input type="radio" name="answer9" id="answer9c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer9aa" class="answer-option"><input type="radio" name="answera9" id="answer9aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer9ab" class="answer-option"><input type="radio" name="answera9" id="answer9ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+
+        <div class="question" id="question10">
+            <h2 class="section" id="section">Section A: Depression</h2>
+            <h2>Question A.10</h2>
+            <p style="font-size: 18px;">Have you noticed a significant and concerning increase in your weight recently?
+            </p>
+            <div class="answer-options">
+                <label for="answer10a" class="answer-option"><input type="radio" name="answer10" id="answer10a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer10b" class="answer-option"><input type="radio" name="answer10" id="answer10b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer10c" class="answer-option"><input type="radio" name="answer10" id="answer10c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer10aa" class="answer-option"><input type="radio" name="answera10" id="answer10aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer10ab" class="answer-option"><input type="radio" name="answera10" id="answer10ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+
+        <div class="question" id="question11">
+            <h2 class="section" id="section">Section A: Depression</h2>
+            <h2>Question A.11</h2>
+            <p style="font-size: 18px;">Do you often feel extremely sensitive or hurt by perceived rejection from
+                others?</p>
+            <div class="answer-options">
+                <label for="answer11a" class="answer-option"><input type="radio" name="answer11" id="answer11a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer11b" class="answer-option"><input type="radio" name="answer11" id="answer11b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer11c" class="answer-option"><input type="radio" name="answer11" id="answer11c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer11aa" class="answer-option"><input type="radio" name="answera11" id="answer11aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer11ab" class="answer-option"><input type="radio" name="answera11" id="answer11ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question" id="question12">
+            <h2 class="section" id="section">Section A: Depression</h2>
+            <h2>Question A.12</h2>
+            <p style="font-size: 18px;">Do you notice changes in your mood or energy levels during the winter months or
+                when exposed to less sunlight?</p>
+            <div class="answer-options">
+                <label for="answer12a" class="answer-option"><input type="radio" name="answer12" id="answer12a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer12b" class="answer-option"><input type="radio" name="answer12" id="answer12b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer12c" class="answer-option"><input type="radio" name="answer12" id="answer12c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer12aa" class="answer-option"><input type="radio" name="answera12" id="answer12aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer12ab" class="answer-option"><input type="radio" name="answera12" id="answer12ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question" id="question13">
+            <h2 class="section" id="section">Section A: Depression</h2>
+            <h2>Question A.13</h2>
+            <p style="font-size: 18px;">Have you recently experienced a traumatic life event, such as loss, violence, or
+                a major life change?</p>
+            <div class="answer-options">
+                <label for="answer13a" class="answer-option"><input type="radio" name="answer13" id="answer13a"
+                        value="never" data-value="0" required> never</label>
+                <label for="answer13b" class="answer-option"><input type="radio" name="answer13" id="answer13b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer13c" class="answer-option"><input type="radio" name="answer13" id="answer13c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer13aa" class="answer-option"><input type="radio" name="answera13" id="answer13aa"
+                        value="No" data-value="0" required checked>No</label>
+                <label for="answer13ab" class="answer-option"><input type="radio" name="answera13" id="answer13ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question" id="question14">
+            <h2 class="section" id="section">Section A: Depression</h2>
+            <h2>Question A.14</h2>
+            <p style="font-size: 18px;">Have you recently given birth or experienced a significant change related to
+                childbirth?</p>
+            <div class="answer-options">
+                <label for="answer14a" class="answer-option"><input type="radio" name="answer14" id="answer14a"
+                        value="never" data-value="0"> never</label>
+                <label for="answer14b" class="answer-option"><input type="radio" name="answer14" id="answer14b"
+                        value="Occasionally" data-value="1"> occasionally</label>
+                <label for="answer14c" class="answer-option"><input type="radio" name="answer14" id="answer14c"
+                        value="Regularly" data-value="2"> Regularly</label>
+            </div>
+            <br>
+            <p>Is duration of the symptom you experience longer than 2 weeks?</p>
+            <div class="answer-options">
+                <label for="answer14aa" class="answer-option"><input type="radio" name="answera14" id="answer14aa"
+                        value="No" data-value="0" checked>No</label>
+                <label for="answer14ab" class="answer-option"><input type="radio" name="answera14" id="answer14ab"
+                        value="Yes" data-value="2"> Yes</label>
+            </div>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Submit button -->
+        <div id="submitSection">
+            <table id="answersTable" border="1.0">
+                <thead>
+                    <tr>
+                        <th>Symptom</th>
+                        <th>Answer</th>
+                        <th>symptom consistency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Feeling a bit low +2</td>
+                        <td id="ans1"></td>
+                        <td id="ansa1"></td>
+                    </tr>
+                    <tr>
+                        <td> disruptions in sleep</td>
+                        <td id="ans2"></td>
+                        <td id="ansa2"></td>
+                    </tr>
+                    <tr>
+                        <td> changes in appetite</td>
+                        <td id="ans3"></td>
+                        <td id="ansa3"></td>
+                    </tr>
+                    <tr>
+                        <td>finding it hard to focus +1</td>
+                        <td id="ans4"></td>
+                        <td id="ansa4"></td>
+                    </tr>
+                    <tr>
+                        <td>thinking about death</td>
+                        <td id="ans5"></td>
+                        <td id="ansa5"></td>
+                    </tr>
+                    <tr>
+                        <td>changes in energy</td>
+                        <td id="ans6"></td>
+                        <td id="ansa6"></td>
+                    </tr>
+                    <tr>
+                        <td>mood swings</td>
+                        <td id="ans7"></td>
+                        <td id="ansa7"></td>
+                    </tr>
+                    <tr>
+                        <td>delusions and hallucinations</td>
+                        <td id="ans8"></td>
+                        <td id="ansa8"></td>
+                    </tr>
+                    <tr>
+                        <td> irritability and anger outbursts</td>
+                        <td id="ans9"></td>
+                        <td id="ansa9"></td>
+                    </tr>
+                    <tr>
+                        <td> weight gain</td>
+                        <td id="ans10"></td>
+                        <td id="ansa10"></td>
+                    </tr>
+                    <tr>
+                        <td>hypersensitivity to rejection</td>
+                        <td id="ans11"></td>
+                        <td id="ansa11"></td>
+                    </tr>
+                    <tr>
+                        <td>Winter/Less Sunlight</td>
+                        <td id="ans12"></td>
+                        <td id="ansa12"></td>
+                    </tr>
+                    <tr>
+                        <td>Traumatic Life Event</td>
+                        <td id="ans13"></td>
+                        <td id="ansa13"></td>
+                    </tr>
+                    <tr id="ppdt">
+                        <td>Giving Birth</td>
+                        <td id="ans14"></td>
+                        <td id="ansa14"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <button type="submit" class="submit" id="submitButton">Submit</button>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+        </div>
+    </form>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getDatabase, ref, get, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail, updateProfile } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { getStorage, ref as storageRef, getDownloadURL, listAll } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
+
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyC2fxyHrAHrB8k9PzLF4MIaDde6W09wn_4",
+            authDomain: "mental-health-7c08f.firebaseapp.com",
+            databaseURL: "https://mental-health-7c08f-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "mental-health-7c08f",
+            storageBucket: "mental-health-7c08f.appspot.com",
+            messagingSenderId: "184742629329",
+            appId: "1:184742629329:web:184d9591d35607c4d29af0"
+        };
+        const app = initializeApp(firebaseConfig);
+
+        // Initialize Firebase services
+        const db = getDatabase(app);
+        const auth = getAuth(app);
+        const storage = getStorage(app);
+
+        let currentQuestion = 1;
+        const totalQuestions = document.querySelectorAll('.question').length;
+        const progressBar = document.getElementById('progressBar');
+
+        const storedUserCreds = JSON.parse(localStorage.getItem("user-creds")) || JSON.parse(sessionStorage.getItem("user-creds"));
+        const userId = storedUserCreds.uid;
+        const genderSnapshot = await get(ref(db, `UserInformation/${userId}/sex`));
+        const genderValue = genderSnapshot.val();
+
+        // In your inline module script
+        window.nextQuestion = async function () {
+            // Function code here
+
+
+            const currentQuestionElement = document.getElementById(`question${currentQuestion}`);
+            // Check if an answer is selected
+            const selectedAnswer = document.querySelector(`input[name="answer${currentQuestion}"]:checked`);
+            const selectedAnswera = document.querySelector(`input[name="answera${currentQuestion}"]:checked`);
+
+            if (!selectedAnswer) {
+                alert("Please select an answer before proceeding.");
+                return;
+            }
+            // Check if the selected answer is "never" and the duration option is "Yes"
+            if (selectedAnswer.value === "never" && selectedAnswera.value === "Yes") {
+                alert("If you are not experiencing this symptom, you cannot select 'Yes' for the duration longer than 2 weeks.");
+                return;
+            }
+
+            // Set the answer for the current question
+            const answer = selectedAnswer.value;
+            const answera = selectedAnswera.value;
+            document.getElementById(`ans${currentQuestion}`).textContent = answer;
+            document.getElementById(`ansa${currentQuestion}`).textContent = answera;
+            // Hide the current question
+            currentQuestionElement.style.display = 'none';
+
+            // Increment currentQuestion and update progress bar
+            currentQuestion++;
+            updateProgressBar();
+
+
+
+            // Check if there are more questions or if it's time to display the submit section
+            if (currentQuestion <= totalQuestions) {
+                if (currentQuestion === 14) {
+                    if (genderValue === "male") {
+                        document.getElementById('submitSection').style.display = 'block';
+                        document.getElementById('ppdt').style.display = 'none';
+                    } else {
+                        const QuestionElement = document.getElementById(`question14`);
+                        QuestionElement.style.display = 'block';
+                    }
+
+                } else {
+                    const nextQuestionElement = document.getElementById(`question${currentQuestion}`);
+                    nextQuestionElement.style.display = 'block';
+                }
+            } else {
+                document.getElementById('submitSection').style.display = 'block';
+            }
+
+
+        };
+
+        window.prevQuestion = function () {
+            if (currentQuestion === totalQuestions + 1) {
+                // If currently on the submit section, go back to the last question
+                document.getElementById('submitSection').style.display = 'none';
+                currentQuestion = totalQuestions;
+                const currentQuestionElement = document.getElementById(`question${currentQuestion}`);
+                currentQuestionElement.style.display = 'none';
+                updateProgressBar();
+            } else {
+
+                document.getElementById('submitSection').style.display = 'none';
+                const currentQuestionElement = document.getElementById(`question${currentQuestion}`);
+                currentQuestionElement.style.display = 'none';
+
+                currentQuestion--;
+                updateProgressBar();
+            }
+            if (currentQuestion >= 1) {
+                const prevQuestionElement = document.getElementById(`question${currentQuestion}`);
+                prevQuestionElement.style.display = 'block';
+            }
+
+        }
+
+
+        function updateProgressBar() {
+            const progressPercentage = ((currentQuestion) / (totalQuestions + 1)) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+        }
+
+        // Display the first question initially and update the progress bar
+        document.getElementById('question1').style.display = 'block';
+        updateProgressBar();
+
+        document.getElementById('quizForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+            // Iterate over each question and get the user's answer
+            for (let i = 1; i <= totalQuestions; i++) {
+
+                const answer = document.querySelector(`input[name="answer${i}"]:checked`).value;
+                const answera = document.querySelector(`input[name="answera${i}"]:checked`).value;
+                document.getElementById(`ans${i}`).textContent = answer;
+                document.getElementById(`ansa${i}`).textContent = answera;
+            }
+        });
+
+
+    </script>
+
+    <script type="module" src="assets/js/MAssessmentScript.js"></script>
+</body>
+
+</html>
